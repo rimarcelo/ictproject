@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="true"
+         stopOnFailure="true"
+>
+    <testsuites>
+        <testsuite name="AvoRed Framework Tests">
+            <directory suffix=".php">./tests/</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src</directory>
+             <exclude>
+                <file>routes/web.php</file>
+            </exclude>
+        </whitelist>
+    </filter>
+
+    <php>
+        <env name="DB_CONNECTION" value="mysql"/>
+        <env name="DB_USERNAME" value="root"/>
+        <env name="DB_DATABASE" value="avored_ecommerce_test"/>
+        <env name="DB_HOST" value="127.0.0.1" />
+        <env name="DB_PORT" value="3306" />
+    </php>
+    
+    <!--logging>
+        <log
+            type="coverage-html"
+            target="../../../public/cov/framework" 
+            lowUpperBound="50"
+            highLowerBound="80"
+        ></log>
+    </logging-->
+</phpunit>  

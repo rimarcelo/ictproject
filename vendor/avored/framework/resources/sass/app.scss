@@ -1,0 +1,9 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.CodeMirror {
+    z-index: 0 !important;
+}

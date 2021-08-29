@@ -1,0 +1,51 @@
+{
+    "name": "darkghosthunter/rememberable-query",
+    "description": "Remember a Query results in one expressive line",
+    "keywords": [
+        "darkghosthunter",
+        "sql",
+        "database",
+        "cache",
+        "laravel"
+    ],
+    "homepage": "https://github.com/darkghosthunter/rememberablequery",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Italo Israel Baeza Cabrera",
+            "email": "darkghosthunter@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2.15",
+        "illuminate/support": "6.*|7.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": ">4.0|5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DarkGhostHunter\\RememberableQuery\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DarkGhostHunter\\RememberableQuery\\RememberableQueryServiceProvider"
+            ]
+        }
+    }
+}
