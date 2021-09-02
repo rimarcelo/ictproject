@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Testing
-      uses: vendor\bin\phpunit
+      run: vendor\bin\phpunit
