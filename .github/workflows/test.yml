@@ -1,0 +1,12 @@
+name: Automated Testing
+on:
+  push:
+    branches:
+      - main
+jobs:
+  web-tests:
+    name: Automate Tests
+    runs-on: ubuntu-latest
+    steps:
+    - name: xecute tests (Unit and Feature tests) via PHPUnit
+      run: .\vendor\bin\phpunit --filter=ExampleTest
