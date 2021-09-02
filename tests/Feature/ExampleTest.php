@@ -2,6 +2,8 @@
 
 namespace Tests\Feature;
 
+use App\User;
+use AvoRed\Framework\Database\Models\Customer;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
@@ -14,8 +16,10 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
-        $response = $this->get('/');
-
+        $customer = factory(User::class)->create(['password' => 'abcd1234']);
+        $response = $this->get('/login');
         $response->assertStatus(200);
     }
+
+
 }

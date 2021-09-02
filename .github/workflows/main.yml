@@ -8,6 +8,8 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
+    - name: Update Storage Link
+      uses: php artisan storage:link
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
     - name: 📂 Sync files

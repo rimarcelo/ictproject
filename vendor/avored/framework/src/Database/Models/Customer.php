@@ -111,10 +111,10 @@ class Customer extends BaseModel
             $redirectUri = asset('');
             $client = $clientRepository->createPasswordGrantClient($this->id, $this->full_name, $redirectUri);
         }
-        
+
         return $client;
     }
-    
+
     /**
      * To check if user has permission to access the given route name.
      * @return \Illuminate\Database\Eloquent\Collection $permissions

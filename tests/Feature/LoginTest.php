@@ -1,18 +1,21 @@
 <?php
 
-namespace Tests\Browser;
+namespace Tests\Feature;
 
-use App\User;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithFaker;
+use Tests\TestCase;
 use AvoRed\Framework\Database\Models\Customer;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Laravel\Dusk\Browser;
+use App\Models\User;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Laravel\Dusk\Chrome;
 use Tests\DuskTestCase;
 
-class LoginTest extends DuskTestCase
+class LoginTest extends TestCase
 {
-    use DatabaseMigrations;
     /**
-     * A basic browser test example.
+     * A basic feature test example.
      *
      * @return void
      */
@@ -20,7 +23,7 @@ class LoginTest extends DuskTestCase
     {
         $password = 'testpassword';
         $customer = factory(Customer::class)->create(['password' => $password]);
-       
+
         $this->browse(function (Browser $browser) use ($customer, $password) {
             $email = $customer->email;
             $browser->visit('/login')
