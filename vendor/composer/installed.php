@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '3.34',
-        'version' => '3.34.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '7ce4c4db83c6fa5aa431ca1996d2ee36a94beb37',
         'name' => 'avored/laravel-ecommerce',
         'dev' => true,
     ),
@@ -38,12 +38,12 @@
             'dev_requirement' => false,
         ),
         'avored/laravel-ecommerce' => array(
-            'pretty_version' => '3.34',
-            'version' => '3.34.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '7ce4c4db83c6fa5aa431ca1996d2ee36a94beb37',
             'dev_requirement' => false,
         ),
         'barryvdh/laravel-debugbar' => array(
@@ -952,8 +952,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0',
-                1 => '1.0.0',
+                0 => '1.0.0',
+                1 => '1.0|2.0',
             ),
         ),
         'psr/simple-cache' => array(
@@ -1237,6 +1237,15 @@
             'aliases' => array(),
             'reference' => '633e4e8afe9e529e5599d71238849a4218dd497b',
             'dev_requirement' => false,
+        ),
+        'symfony/phpunit-bridge' => array(
+            'pretty_version' => 'v5.3.7',
+            'version' => '5.3.7.0',
+            'type' => 'symfony-bridge',
+            'install_path' => __DIR__ . '/../symfony/phpunit-bridge',
+            'aliases' => array(),
+            'reference' => '2a1ff6e5a4521be1350bfce75784938e590d6342',
+            'dev_requirement' => true,
         ),
         'symfony/polyfill-ctype' => array(
             'pretty_version' => 'v1.23.0',
