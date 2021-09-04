@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '7ce4c4db83c6fa5aa431ca1996d2ee36a94beb37',
+        'reference' => '5740a2aa800e8938d4e32f0c9df2788515718438',
         'name' => 'avored/laravel-ecommerce',
         'dev' => true,
     ),
@@ -43,7 +43,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '7ce4c4db83c6fa5aa431ca1996d2ee36a94beb37',
+            'reference' => '5740a2aa800e8938d4e32f0c9df2788515718438',
             'dev_requirement' => false,
         ),
         'barryvdh/laravel-debugbar' => array(
@@ -671,12 +671,12 @@
             'dev_requirement' => false,
         ),
         'nunomaduro/collision' => array(
-            'pretty_version' => 'v3.2.0',
-            'version' => '3.2.0.0',
+            'pretty_version' => 'v3.0.0',
+            'version' => '3.0.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../nunomaduro/collision',
             'aliases' => array(),
-            'reference' => 'f7c45764dfe4ba5f2618d265a6f1f9c72732e01d',
+            'reference' => 'af42d339fe2742295a54f6fdd42aaa6f8c4aca68',
             'dev_requirement' => true,
         ),
         'nyholm/psr7' => array(
