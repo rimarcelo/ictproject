@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'DevOps') }}</title>
+    <title>Testing Process</title>
     <link rel="shortcut icon" href="/favicon.png">
     <!-- Scripts -->
 
